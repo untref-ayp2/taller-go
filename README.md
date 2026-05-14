@@ -60,15 +60,6 @@ Para ejecutar todos los tests:
 go test ./...
 ```
 
-## Ejercicios
-
-Los esqueletos de ejercicios están en `NN-tema/ejercicios/` con `// TODO: implementar`.
-Las soluciones están en la rama `soluciones`:
-
-```bash
-git checkout soluciones
-```
-
 ## Requisitos
 
 Go 1.20 o superior.
