@@ -1,125 +1,74 @@
 # Taller de Go
 
-Pasos para empezar a probar el código en este repositorio:
+Repositorio complementario de la sección **Taller de Go** de los apuntes de Algoritmos y Programación II.
 
-1. Clonar el repositorio y moverse a la carpeta del taller:
+## Estructura
 
-   ```bash
-   git clone git@github.com:untref-ayp2/taller-GO.git
-   cd taller-GO
-   ```
+```
+01-introduccion/           # ← capítulo 2-1 del apunte
+└── ejemplos/00-hola/
 
-2. Ejecutar el ejemplo que quieran. Para esto hay muchisimas formas de hacerlo:
+02-paquetes-y-modulos/     # ← capítulo 2-2
+└── ejemplos/
 
-   ```bash
-   $ go run ./00-hola/main.go
-   ¡Hola, Mundo!
-   ```
+03-elementos-basicos/      # ← capítulo 2-3 (tipos, variables, consts, condicionales, ciclos)
+└── ejemplos/{01-tipodatos,02-variables,03-constantes,04-condicionales,05-ciclos}/
 
-   ```bash
-   $ go run ./00-hola
-   ¡Hola, Mundo!
-   ```
+04-funciones/              # ← capítulo 2-4
+└── ejemplos/{genericas,matematicas}/
 
-   ```bash
-   $ go run ./00-hola/.
-   ¡Hola, Mundo!
-   ```
+05-arreglos-slices/        # ← capítulo 2-5
+└── ejemplos/arreglos/
 
-   ```bash
-   $ go run github.com/untref-ayp2/taller-GO/00-hola
-   ¡Hola, Mundo!
-   ```
+06-maps/                   # ← capítulo 2-6
+└── ejemplos/
 
-   ```bash
-   $ cd 00-hola
-   00-hola $ go run .
-   ¡Hola, Mundo!
-   ```
+07-punteros/               # ← capítulo 2-7
+└── ejemplos/punteros/
 
-   ```bash
-   00-hola $ go run main.go
-   ¡Hola, Mundo!
-   ```
+08-structs-interfaces/     # ← capítulo 2-8
+└── ejemplos/
 
-   ```bash
-   00-hola $ go run github.com/untref-ayp2/taller-GO/00-hola
-   ¡Hola, Mundo!
-   ```
+09-archivos/               # ← capítulo 2-9
+└── ejemplos/{leer-completo,leer-lineas,escribir}/
 
-   ```bash
-   00-hola $ cd ../07-punteros # desde cualquier carpeta dentro del módulo
-   07-punteros $ go run github.com/untref-ayp2/taller-GO/00-hola
-   ¡Hola, Mundo!
-   ```
+10-errores/                # ← capítulo 2-10
+└── ejemplos/
 
-## Solucionando problemas
-
-### Requisitos mínimos
-
-En este punto, damos por descartado que en sus entornos pueden ejecutar comandos
-de Go en una terminal. Si este no fuera el caso, deberian solicitar asistencia
-en el Slack de la materia.
-
-Como requerimiento base, deberían poder ejecutar el siguiente comando:
-
-```bash
-$ go version
-go version go1.22.0 <nombre-de-la-arquitectura>
+11-oop/                    # ← capítulo 2-11
+└── ejemplos/figuras/
 ```
 
-Como recomendación utilicen la última versión disponible, que al día de hoy es
-1.22, o de mínima la version 1.20 que es la versión donde se introdujo el
-soporte para módulos.
+Cada tema tiene una carpeta `ejercicios/` con esqueletos para resolver y tests asociados.
 
-### Problemas al ejecutar `go run`
-
-Esto fue sucediendo a algunos estudiantes, principalmente en entornos Windows.
-Aunque no es exclusivo de este sistema operativo.
-
-Si cuando quieren ejecutar uno de los ejemplos del taller, puede pasar que les
-diga esto:
+## Cómo usar
 
 ```bash
-taller-GO/07-punteros $ go run main.go
-main.go:6:2: cannot find package "github.com/untref-ayp2/taller-GO/07-punteros/punteros" in any of:
-        /usr/local/go/src/github.com/untref-ayp2/taller-GO/07-punteros/punteros (from $GOROOT)
-        /Users/tiagox/go/src/github.com/untref-ayp2/taller-GO/07-punteros/punteros (from $GOPATH)
+git clone https://github.com/untref-ayp2/taller-go.git
+cd taller-go
 ```
 
-Esto podría deberse a que el soporte para módulos esté desactivado. Para
-verificar esto deberiamos chequear la variable de entorno de Go `GO111MODULE`, y
-para eso vamos a usar `go env` que es la herramienta para administrar variables
-de entorno relacionadas a Go.
-
-Primero veamos que valor tiene:
+Para ejecutar un ejemplo:
 
 ```bash
-taller-GO/07-punteros $ go env GO111MODULE
-off
+go run ./01-introduccion/ejemplos/00-hola
 ```
 
-El comando muestra el valor en `off`, estamos en problemas, pero la solución es
-muy simple. Solamente debemos actualizar la variable con un nuevo valor, usando
-la opción `-w`:
+Para ejecutar todos los tests:
 
 ```bash
-taller-GO/07-punteros $ go env -w GO111MODULE=''
+go test ./...
 ```
 
-Con esto estamos dejando que use el valor por defecto de la variable que es `auto`.
+## Ejercicios
 
-Si ahora ejecuto el código nuevamente:
+Los esqueletos de ejercicios están en `NN-tema/ejercicios/` con `// TODO: implementar`.
+Las soluciones están en la rama `soluciones`:
 
 ```bash
-taller-GO/07-punteros $ go run main.go
-x =  12
-p2 =  0x1400009c008
-y =  10
-p2 =  0x1400009c010
-La dirección de memoria del numero es:  0x1400009c008
-x =  13
-x =  13
+git checkout soluciones
 ```
 
-Todo debería funcionar según lo esperado.
+## Requisitos
+
+Go 1.20 o superior.
