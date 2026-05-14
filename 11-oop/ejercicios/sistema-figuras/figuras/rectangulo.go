@@ -6,13 +6,16 @@ type Rectangulo struct {
 }
 
 func NewRectangulo(base, altura float64) Rectangulo {
-	return Rectangulo{Base: base, Altura: altura}
+	// TODO: implementar
+	return Rectangulo{}
 }
 
 func (r Rectangulo) Area() float64 {
-	return r.Base * r.Altura
+	// TODO: implementar
+	return 0
 }
 
 func (r Rectangulo) Perimetro() float64 {
-	return 2*r.Base + 2*r.Altura
+	// TODO: implementar
+	return 0
 }

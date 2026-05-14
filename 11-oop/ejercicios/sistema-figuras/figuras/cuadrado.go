@@ -5,13 +5,16 @@ type Cuadrado struct {
 }
 
 func NewCuadrado(lado float64) Cuadrado {
-	return Cuadrado{Lado: lado}
+	// TODO: implementar
+	return Cuadrado{}
 }
 
 func (c Cuadrado) Area() float64 {
-	return c.Lado * c.Lado
+	// TODO: implementar
+	return 0
 }
 
 func (c Cuadrado) Perimetro() float64 {
-	return 4 * c.Lado
+	// TODO: implementar
+	return 0
 }

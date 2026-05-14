@@ -1,15 +1,9 @@
 package main
 
-import "fmt"
-
-func main() {
-	var arr [5]int
-	InicializarArreglo(&arr)
-	fmt.Println(arr)
+func InicializarArreglo(arr *[5]int) {
+	// TODO: implementar
 }
 
-func InicializarArreglo(arr *[5]int) {
-	for i := range arr {
-		arr[i] = i * 2
-	}
+func main() {
+	// Usá este espacio para probar tu implementación
 }
