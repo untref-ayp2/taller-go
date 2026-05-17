@@ -1,12 +1,26 @@
 package main
 
+type Punto struct {
+	X, Y float64
+}
+
+func NewPunto(x, y float64) Punto {
+	// TODO: implementar
+	return Punto{}
+}
+
 type Figura interface {
 	Area() float64
 	Perimetro() float64
 }
 
 type Rectangulo struct {
-	Ancho, Alto float64
+	EsqInfIzq, EsqSupDer Punto
+}
+
+func NewRectangulo(infIzq, supDer Punto) Rectangulo {
+	// TODO: implementar
+	return Rectangulo{}
 }
 
 func (r Rectangulo) Area() float64 {
@@ -20,7 +34,13 @@ func (r Rectangulo) Perimetro() float64 {
 }
 
 type Circulo struct {
-	Radio float64
+	Centro Punto
+	Radio  float64
+}
+
+func NewCirculo(centro Punto, radio float64) Circulo {
+	// TODO: implementar
+	return Circulo{}
 }
 
 func (c Circulo) Area() float64 {
@@ -37,7 +57,7 @@ type Cuadrado struct {
 	Rectangulo
 }
 
-func NuevoCuadrado(lado float64) Cuadrado {
+func NewCuadrado(infIzq Punto, lado float64) Cuadrado {
 	// TODO: implementar
 	return Cuadrado{}
 }
