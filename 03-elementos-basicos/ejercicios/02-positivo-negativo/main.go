@@ -1,7 +1,7 @@
 package main
 
 func clasificarNumero(n int) string {
-	// TODO: implementar
+	// TODO: devolver "positivo", "negativo" o "cero" segun corresponda
 	return ""
 }
 

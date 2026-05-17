@@ -1,0 +1,19 @@
+# Binarios compilados de Go en la raíz
+/00-hola
+/01-crear-modulo
+/01-tipodatos
+/02-importar-paquete
+/02-variables
+/03-constantes
+/03-dependencias
+/04-condicionales
+/05-ciclos
+/ejemplos
+/escribir
+/leer-completo
+/leer-lineas
+
+# Archivos generados por ejercicios en la raíz
+/ejemplo.txt
+/otro.txt
+/salida.txt

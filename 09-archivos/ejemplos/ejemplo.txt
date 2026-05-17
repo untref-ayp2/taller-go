@@ -1,0 +1,4 @@
+Hola, este es un archivo de ejemplo.
+Tiene varias líneas.
+Cada línea tiene texto.
+Última línea.

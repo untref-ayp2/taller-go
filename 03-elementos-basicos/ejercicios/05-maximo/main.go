@@ -1,7 +1,7 @@
 package main
 
 func maximo(numeros []int) int {
-	// TODO: implementar
+	// TODO: encontrar y devolver el valor maximo del slice usando range
 	return 0
 }
 
