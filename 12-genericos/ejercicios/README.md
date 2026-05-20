@@ -1,0 +1,32 @@
+# Ejercicios: Tipos parametrizables (genéricos)
+
+## 01 - Búsqueda genérica
+
+Completar las funciones `Contiene` y `Posicion` en `01-busqueda/busqueda.go`.
+Ambas son genéricas y usan el constraint `comparable`.
+
+→ `01-busqueda/`
+
+## 02 - Ordenamiento genérico
+
+Completar la función `OrdenarBurbuja` en `02-ordenamiento/ordenar.go`.
+Usa una función comparadora para determinar el orden, lo que permite
+ordenar cualquier tipo de dato.
+
+→ `02-ordenamiento/`
+
+## 03 - Máximo y mínimo
+
+Completar las funciones `Maximo` y `Minimo` en `03-max-min/maxmin.go`.
+Usan un constraint personalizado `Ordenable` que agrupa tipos
+con orden natural.
+
+→ `03-max-min/`
+
+## 04 - Mezcla de slices ordenados
+
+Completar la función `MergeSlices` en `04-mezcla/mezcla.go`.
+Combina dos slices ordenados en uno solo, usando una función
+comparadora.
+
+→ `04-mezcla/`
