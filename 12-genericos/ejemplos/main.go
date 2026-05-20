@@ -29,16 +29,18 @@ func BuscarLineal[T comparable](arr []T, elem T) int {
 	return -1
 }
 
-// OrdenarBurbuja ordena un slice usando el algoritmo de burbujeo.
+// OrdenarSeleccion ordena un slice usando el algoritmo de selección.
 // La función menor determina si a debe ir antes que b.
-func OrdenarBurbuja[T any](arr []T, menor func(T, T) bool) {
+func OrdenarSeleccion[T any](arr []T, menor func(T, T) bool) {
 	n := len(arr)
 	for i := 0; i < n-1; i++ {
-		for j := 0; j < n-i-1; j++ {
-			if menor(arr[j+1], arr[j]) {
-				arr[j], arr[j+1] = arr[j+1], arr[j]
+		minIdx := i
+		for j := i + 1; j < n; j++ {
+			if menor(arr[j], arr[minIdx]) {
+				minIdx = j
 			}
 		}
+		arr[i], arr[minIdx] = arr[minIdx], arr[i]
 	}
 }
 
@@ -96,9 +98,9 @@ func main() {
 	fmt.Println("Posicion de 30:", BuscarLineal(numeros, 30)) // 2
 	fmt.Println("Posicion de 99:", BuscarLineal(numeros, 99)) // -1
 
-	// --- OrdenarBurbuja ---
+	// --- OrdenarSeleccion ---
 	floats := []float64{3.5, 1.2, 4.8, 2.1}
-	OrdenarBurbuja(floats, func(a, b float64) bool { return a < b })
+	OrdenarSeleccion(floats, func(a, b float64) bool { return a < b })
 	fmt.Println("Ordenado:", floats) // [1.2 2.1 3.5 4.8]
 
 	// Con structs
@@ -111,7 +113,7 @@ func main() {
 		{"Luis", 25},
 		{"Pepe", 35},
 	}
-	OrdenarBurbuja(personas, func(a, b Persona) bool { return a.Edad < b.Edad })
+	OrdenarSeleccion(personas, func(a, b Persona) bool { return a.Edad < b.Edad })
 	fmt.Println("Personas por edad:", personas) // [{Luis 25} {Ana 30} {Pepe 35}]
 
 	// --- Maximo ---
