@@ -23,10 +23,10 @@ con orden natural.
 
 → `03-max-min/`
 
-## 04 - Mezcla de slices ordenados
+## 04 - Filtrado genérico
 
-Completar la función `MergeSlices` en `04-mezcla/mezcla.go`.
-Combina dos slices ordenados en uno solo, usando una función
-comparadora.
+Completar la función `Filtrar` en `04-filtrar/filtrar.go`.
+Recibe un slice y una función condición, y devuelve un nuevo slice
+con los elementos que la cumplen.
 
-→ `04-mezcla/`
+→ `04-filtrar/`
