@@ -13,7 +13,7 @@ func main() {
 	fmt.Scanln(&numero)
 
 	condicionales.Condicional(numero)
-	condicionales.SwtichBasico()
+	condicionales.SwitchBasico()
 	condicionales.SwitchSinCondicion(time.Now().Local().Hour())
 	condicionales.SwitchMultiple(' ')
 	condicionales.SwitchFallthrough(2)

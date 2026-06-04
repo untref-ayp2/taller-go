@@ -27,7 +27,7 @@ func Condicional(numero int) {
 	}
 }
 
-func SwtichBasico() {
+func SwitchBasico() {
 	switch time.Now().Weekday() {
 	case time.Saturday, time.Sunday:
 		fmt.Println("Hoy es fin de semana")

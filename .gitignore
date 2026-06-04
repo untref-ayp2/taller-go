@@ -1,19 +1,29 @@
-# Binarios compilados de Go en la raíz
-/00-hola
-/01-crear-modulo
-/01-tipodatos
-/02-importar-paquete
-/02-variables
-/03-constantes
-/03-dependencias
-/04-condicionales
-/05-ciclos
-/ejemplos
-/escribir
-/leer-completo
-/leer-lineas
+# Binarios
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
 
-# Archivos generados por ejercicios en la raíz
-/ejemplo.txt
-/otro.txt
-/salida.txt
+# Tests
+*.test
+*.out
+*.test.exe
+
+# Go workspace
+go.work
+go.work.sum
+
+# Directorios IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Vendor (si se usa)
+/vendor/
+
+# OS
+.DS_Store
+Thumbs.db
