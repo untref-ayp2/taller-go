@@ -67,8 +67,16 @@ go run ./01-introduccion/ejemplos/00-hola
 Para ejecutar todos los tests:
 
 ```bash
-go test ./...
+make test
 ```
+
+O con más detalle:
+
+```bash
+make test-v
+```
+
+Para más información sobre cómo trabajar, ver [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Requisitos
 
