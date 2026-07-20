@@ -46,7 +46,7 @@ Repositorio complementario de la sección **Taller de Go** de los apuntes de Alg
 
 11-oop/                      # ← capítulo 2-11
 ├── ejemplos/figuras/
-└── ejercicios/sistema-figuras/
+└── ejercicios/sistema-empleados/
 ```
 
 Cada directorio `ejercicios/` contiene un `README.md` con los enunciados y esqueletos con tests.
@@ -54,8 +54,14 @@ Cada directorio `ejercicios/` contiene un `README.md` con los enunciados y esque
 ## Cómo usar
 
 ```bash
-git clone https://github.com/untref-ayp2/taller-go.git
-cd taller-go
+# Ejecutar todos los tests
+make test
+
+# Con detalle de cada caso
+make test-v
+
+# Tests de un ejercicio específico
+go test -v ./03-elementos-basicos/ejercicios/01-temperatura/...
 ```
 
 Para ejecutar un ejemplo:
@@ -64,19 +70,7 @@ Para ejecutar un ejemplo:
 go run ./01-introduccion/ejemplos/00-hola
 ```
 
-Para ejecutar todos los tests:
-
-```bash
-make test
-```
-
-O con más detalle:
-
-```bash
-make test-v
-```
-
-Para más información sobre cómo trabajar, ver [CONTRIBUTING.md](CONTRIBUTING.md).
+Para más información, ver [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Requisitos
 

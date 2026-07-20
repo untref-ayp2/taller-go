@@ -28,7 +28,7 @@ Si algún test falla: se muestra una cruz roja — revisá el error, corregí el
 
 ## Tu repositorio tiene un PR "Feedback"
 
-Cuando empezaste la assignment, GitHub Classroom creó automáticamente un Pull Request
+Cuando aceptaste la asignación con classroom50, se creó automáticamente un Pull Request
 llamado **"Feedback"** en tu repositorio. Este PR es tu canal de comunicación con los docentes.
 
 **No cierres este PR. Si lo cerrás, perdés el canal de ayuda.**
