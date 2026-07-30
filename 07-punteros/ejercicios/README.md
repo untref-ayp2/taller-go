@@ -21,3 +21,8 @@
 5. Escribí una función `maximo` que reciba un puntero a un arreglo
    `[6]int` y devuelva el valor máximo del arreglo.
    → `maximo/`
+
+   ⚠️ Este ejercicio es una **reimplementación con punteros** del
+   ejercicio `05-maximo` de la unidad *Elementos básicos* (que usaba
+   un slice y `range`). Compará ambas versiones para entender cuándo
+   conviene pasar por referencia y cuándo por valor.

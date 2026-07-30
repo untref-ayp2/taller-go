@@ -47,6 +47,10 @@ Repositorio complementario de la sección **Taller de Go** de los apuntes de Alg
 11-oop/                      # ← capítulo 2-11
 ├── ejemplos/figuras/
 └── ejercicios/sistema-empleados/
+
+12-genericos/                # ← capítulo 2-12
+├── ejemplos/
+└── ejercicios/{01-busqueda,02-ordenamiento,03-max-min,04-filtrar}/
 ```
 
 Cada directorio `ejercicios/` contiene un `README.md` con los enunciados y esqueletos con tests.
