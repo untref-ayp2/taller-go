@@ -1,6 +1,6 @@
 package main
 
-func Promedio(notas []float64) float64 {
+func Promedio(nums ...float64) float64 {
 	// TODO: implementar
 	return 0
 }
