@@ -22,6 +22,6 @@ func main() {
 	}
 	defer archivo.Close()
 
-	archivo.WriteString("Escrito con os.Create\n")
+	fmt.Fprintln(archivo, "Escrito con os.Create")
 	fmt.Println("Archivo creado con os.Create.")
 }

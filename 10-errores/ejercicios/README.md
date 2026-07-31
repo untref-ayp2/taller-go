@@ -1,30 +1,43 @@
 # Ejercicios: Errores
 
-1. **División segura.** Escribí una función `dividir(a, b int) (int, error)`
-   que retorne el resultado de a/b y un error si b es cero. Usá `errors.New`.
-   → `dividir/`
+## 01 - División segura
 
-2. **Clasificar nota.** Escribí una función `clasificar(nota int) (string, error)`
-   que devuelva `"aprobado"` si nota >= 4, `"desaprobado"` si nota < 4,
-   o un error con `fmt.Errorf` si la nota está fuera del rango 0-10
-   (incluyendo el valor inválido en el mensaje).
-   → `clasificar/`
+Completar la función `Dividir` en `01-dividir/dividir.go`.
+Recibe dos enteros y devuelve el cociente junto con un error si el divisor
+es cero. El error se crea con `errors.New`.
 
-3. **Buscar producto.** Declará un error centinela `ErrProductoNoEncontrado`.
-   Escribí una función `buscarProducto(codigos []string, target string) (string, error)`
-   que recorra el slice y devuelva el código si existe, o
-   `ErrProductoNoEncontrado` en caso contrario.
-   → `buscar-producto/`
+→ `01-dividir/`
 
-4. **Saldo insuficiente.** Definí un struct `SaldoInsuficienteError` con
-   campos `Saldo` y `Monto` (ambos `float64`) que implemente `error`.
-   Escribí una función `extraer(saldo, monto float64) (float64, error)`
-   que devuelva el saldo restante o un `SaldoInsuficienteError` si el
-   monto supera al saldo.
-   → `extraer/`
+## 02 - Clasificar edad
 
-5. **Leer configuración.** Escribí una función `leerConfig(ruta string) (string, error)`
-   que llame a `os.ReadFile(ruta)`. Si hay error, agregale contexto con
-   `fmt.Errorf` y `%w` indicando que falló al leer la configuración.
-   En el `main`, usá `errors.Is` para detectar el error original.
-   → `leer-config/`
+Completar la función `ClasificarEdad` en `02-clasificar/clasificar.go`.
+Recibe una edad y devuelve `"nino"`, `"adolescente"`, `"adulto"` o
+`"adulto mayor"` según corresponda. Si la edad es negativa, devuelve un error.
+
+→ `02-clasificar/`
+
+## 03 - Buscar producto
+
+Completar la función `BuscarProducto` en `03-buscar-producto/buscar_producto.go`.
+Recibe un slice de `Producto` y un código, y devuelve el producto encontrado.
+Si no existe, devuelve el error centinela `ErrProductoNoEncontrado`.
+
+→ `03-buscar-producto/`
+
+## 04 - Saldo insuficiente
+
+Completar la función `Extraer` en `04-extraer/extraer.go`.
+Recibe un saldo y un monto, y devuelve el saldo restante. Si el monto supera
+al saldo, devuelve un `SaldoInsuficienteError` (struct con campos `Saldo`
+y `Monto` que implementa `error`).
+
+→ `04-extraer/`
+
+## 05 - Leer archivo con contexto
+
+Completar la función `LeerArchivo` en `05-leer-archivo/leer_archivo.go`.
+Llama a `os.ReadFile` y, si hay error, lo envuelve con `fmt.Errorf`
+usando `%w` para agregar contexto. Los tests verifican el error con
+`errors.Is` contra `os.ErrNotExist`.
+
+→ `05-leer-archivo/`

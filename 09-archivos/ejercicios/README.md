@@ -1,24 +1,41 @@
 # Ejercicios: Archivos
 
-1. Escribí un programa que lea un archivo de texto y muestre por
-   pantalla la cantidad de líneas que contiene.
-   → `contar-lineas/`
+## 01 - Contar líneas
 
-2. Escribí una función `CopiarArchivo(origen, destino string) error`
-   que copie el contenido de un archivo a otro. Usá `os.ReadFile` y
-   `os.WriteFile`.
-   → `copiar-archivo/`
+Completar la función `ContarLineas` en `01-contar-lineas/contar_lineas.go`.
+Lee un archivo de texto y devuelve la cantidad de líneas que contiene,
+usando `bufio.Scanner`.
 
-3. Escribí un programa que lea un archivo `numeros.txt` donde cada línea
-   contiene un número entero, los sume y muestre el resultado. Usá
-   `bufio.Scanner` y `strconv.Atoi` para convertir cada línea a `int`.
-   → `sumar-numeros/`
+→ `01-contar-lineas/`
 
-4. Escribí una función `AgregarLinea(archivo, linea string) error` que
-   agregue una línea al final de un archivo existente. Usá `os.OpenFile`
-   con la bandera `os.O_APPEND|os.O_WRONLY`.
-   → `agregar-linea/`
+## 02 - Copiar archivo
 
-5. Escribí un programa que dado un archivo de texto, genere otro archivo
-   donde cada línea esté numerada (similar al ejemplo de `bufio.Scanner`).
-   → `numerar-lineas/`
+Completar la función `CopiarArchivo` en `02-copiar-archivo/copiar_archivo.go`.
+Recibe las rutas de origen y destino, y copia el contenido usando
+`os.ReadFile` y `os.WriteFile`.
+
+→ `02-copiar-archivo/`
+
+## 03 - Sumar números
+
+Completar la función `SumarNumeros` en `03-sumar-numeros/sumar_numeros.go`.
+Lee un archivo donde cada línea contiene un número entero, los suma
+usando `bufio.Scanner` y `strconv.Atoi`, y devuelve el resultado.
+
+→ `03-sumar-numeros/`
+
+## 04 - Agregar línea
+
+Completar la función `AgregarLinea` en `04-agregar-linea/agregar_linea.go`.
+Agrega una línea al final de un archivo existente, leyendo el contenido
+actual con `os.ReadFile` y escribiéndolo de vuelta con `os.WriteFile`.
+
+→ `04-agregar-linea/`
+
+## 05 - Numerar líneas
+
+Completar la función `NumerarLineas` en `05-numerar-lineas/numerar_lineas.go`.
+Genera un archivo donde cada línea del original está numerada, usando
+`fmt.Fprintf` para escribir las líneas formateadas.
+
+→ `05-numerar-lineas/`

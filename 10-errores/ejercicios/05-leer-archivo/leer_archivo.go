@@ -1,8 +1,8 @@
 package main
 
-func Extraer(s []int, inicio, fin int) ([]int, error) {
+func LeerArchivo(ruta string) (string, error) {
 	// TODO: implementar
-	return nil, nil
+	return "", nil
 }
 
 func main() {

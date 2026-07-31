@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/untref-ayp2/taller-go/11-oop/ejercicios/sistema-empleados/empleados"
+	"github.com/untref-ayp2/taller-go/11-oop/ejercicios/01-sistema-empleados/empleados"
 )
 
 func TotalSueldos(empleados []empleados.Empleado) float64 {

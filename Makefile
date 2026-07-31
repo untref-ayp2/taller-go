@@ -16,4 +16,4 @@ lint:
 	golangci-lint run ./...
 
 clean:
-	rm -f *_test.txt _*.txt _config.txt _origen.txt _destino.txt _bitacora.txt _entrada.txt _salida.txt _nums.txt _test_vacio.txt
+	rm -f *_test.txt _*.txt _origen.txt _destino.txt _bitacora.txt _entrada.txt _salida.txt _nums.txt _test_vacio.txt

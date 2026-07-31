@@ -3,7 +3,7 @@ package main
 import (
 	"testing"
 
-	"github.com/untref-ayp2/taller-go/11-oop/ejercicios/sistema-empleados/empleados"
+	"github.com/untref-ayp2/taller-go/11-oop/ejercicios/01-sistema-empleados/empleados"
 )
 
 func TestTiempoCompletoSueldo(t *testing.T) {

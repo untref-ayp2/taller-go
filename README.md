@@ -18,35 +18,35 @@ Repositorio complementario de la sección **Taller de Go** de los apuntes de Alg
 
 04-funciones/                # ← capítulo 2-4
 ├── ejemplos/{genericas,matematicas}/
-└── ejercicios/{promedio,aplicar}/
+└── ejercicios/{01-promedio,02-aplicar}/
 
 05-arreglos-slices/          # ← capítulo 2-5
 ├── ejemplos/arreglos/
-└── ejercicios/{invertir,rotar,eliminar,eliminar-duplicados}/
+└── ejercicios/{01-invertir,02-rotar,03-eliminar,04-eliminar-duplicados}/
 
 06-maps/                     # ← capítulo 2-6
 ├── ejemplos/
-└── ejercicios/{contar-palabras,igual,anagramas}/
+└── ejercicios/{01-contar-palabras,02-igual,03-anagramas}/
 
 07-punteros/                 # ← capítulo 2-7
 ├── ejemplos/punteros/
-└── ejercicios/{swap,sumar-punteros,dividir,inicializar-arreglo,concatenar}/
+└── ejercicios/{01-swap,02-sumar-punteros,03-dividir,04-inicializar-arreglo,05-concatenar}/
 
 08-structs-interfaces/       # ← capítulo 2-8
 ├── ejemplos/
-└── ejercicios/notificaciones/
+└── ejercicios/01-notificaciones/
 
 09-archivos/                 # ← capítulo 2-9
 ├── ejemplos/{leer-completo,leer-lineas,escribir}/
-└── ejercicios/{contar-lineas,copiar-archivo,sumar-numeros,agregar-linea,numerar-lineas}/
+└── ejercicios/{01-contar-lineas,02-copiar-archivo,03-sumar-numeros,04-agregar-linea,05-numerar-lineas}/
 
 10-errores/                  # ← capítulo 2-10
 ├── ejemplos/
-└── ejercicios/{dividir,clasificar,buscar-producto,extraer,leer-config}/
+└── ejercicios/{01-dividir,02-clasificar,03-buscar-producto,04-extraer,05-leer-config}/
 
 11-oop/                      # ← capítulo 2-11
 ├── ejemplos/figuras/
-└── ejercicios/sistema-empleados/
+└── ejercicios/01-sistema-empleados/
 
 12-genericos/                # ← capítulo 2-12
 ├── ejemplos/

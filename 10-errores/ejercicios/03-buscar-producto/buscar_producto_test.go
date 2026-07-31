@@ -1,6 +1,9 @@
 package main
 
-import "testing"
+import (
+	"errors"
+	"testing"
+)
 
 func TestBuscarProductoOK(t *testing.T) {
 	p := []Producto{{1, "A"}, {2, "B"}}
@@ -16,7 +19,7 @@ func TestBuscarProductoOK(t *testing.T) {
 func TestBuscarProductoNoEncontrado(t *testing.T) {
 	p := []Producto{{1, "A"}}
 	_, err := BuscarProducto(p, 99)
-	if err == nil {
-		t.Error("producto inexistente deberia devolver error")
+	if !errors.Is(err, ErrProductoNoEncontrado) {
+		t.Errorf("esperado ErrProductoNoEncontrado, obtuve %v", err)
 	}
 }
