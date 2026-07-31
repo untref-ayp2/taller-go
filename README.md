@@ -30,7 +30,7 @@ Repositorio complementario de la sección **Taller de Go** de los apuntes de Alg
 
 07-punteros/                 # ← capítulo 2-7
 ├── ejemplos/punteros/
-└── ejercicios/{swap,sumar-punteros,dividir,inicializar-arreglo,maximo}/
+└── ejercicios/{swap,sumar-punteros,dividir,inicializar-arreglo,concatenar}/
 
 08-structs-interfaces/       # ← capítulo 2-8
 ├── ejemplos/
@@ -78,7 +78,7 @@ Para más información, ver [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Requisitos
 
-- Go 1.20 o superior
+- Go 1.22 o superior
 - Opcional: [golangci-lint](https://golangci-lint.run/) para linting local
 
 ## Licencia

@@ -1,4 +1,4 @@
-.PHONY: build test test-v test-short fmt lint clean
+.PHONY: build test test-v fmt lint clean
 
 build:
 	go build ./...
@@ -8,9 +8,6 @@ test:
 
 test-v:
 	go test -v ./...
-
-test-short:
-	go test -short ./...
 
 fmt:
 	go fmt ./...

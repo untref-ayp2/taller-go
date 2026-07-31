@@ -1,8 +1,7 @@
 package main
 
-func Dividir(dividendo, divisor int, resto *int) int {
+func Concatenar(destino *string, sufijo string) {
 	// TODO: implementar
-	return 0
 }
 
 func main() {

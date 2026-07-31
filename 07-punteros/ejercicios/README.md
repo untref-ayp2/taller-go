@@ -15,14 +15,10 @@
    → `dividir/`
 
 4. Escribí una función `inicializarArreglo` que reciba un puntero a un
-   arreglo `[5]int` y lo inicialice con los valores `1, 2, 3, 4, 5`.
+   arreglo `[5]int` y lo inicialice con los valores `0, 2, 4, 6, 8`
+   (el doble de cada índice).
    → `inicializar-arreglo/`
 
-5. Escribí una función `maximo` que reciba un puntero a un arreglo
-   `[6]int` y devuelva el valor máximo del arreglo.
-   → `maximo/`
-
-   ⚠️ Este ejercicio es una **reimplementación con punteros** del
-   ejercicio `05-maximo` de la unidad *Elementos básicos* (que usaba
-   un slice y `range`). Compará ambas versiones para entender cuándo
-   conviene pasar por referencia y cuándo por valor.
+5. Escribí una función `Concatenar` que reciba un puntero a `string`
+   y un sufijo, y modifique el string original agregándole el sufijo.
+   → `concatenar/`

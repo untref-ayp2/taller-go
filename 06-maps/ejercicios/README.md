@@ -11,7 +11,7 @@
    → `igual/`
 
 3. Los anagramas son palabras que tienen las mismas letras en diferente
-   orden. Escribí una función `Anagramas` que tome dos strings y devuelva
-   `true` si son anagramas. Usá el prototipo `func Anagramas(s1, s2 string) bool`.
+orden. Escribí una función `SonAnagramas` que tome dos strings y devuelva
+`true` si son anagramas. Usá el prototipo `func SonAnagramas(s1, s2 string) bool`.
    La complejidad debe ser $O(n)$, donde n es la longitud de los strings.
    → `anagramas/`
