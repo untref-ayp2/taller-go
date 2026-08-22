@@ -6,3 +6,7 @@ func Filtrar[T any](arr []T, fn func(T) bool) []T {
 	// TODO: implementar
 	return nil
 }
+
+func main() {
+	// Usá este espacio para probar tu implementación
+}

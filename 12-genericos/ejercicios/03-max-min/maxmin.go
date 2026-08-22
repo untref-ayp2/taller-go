@@ -20,3 +20,7 @@ func Minimo[T Ordenable](arr []T) T {
 	var zero T
 	return zero
 }
+
+func main() {
+	// Usá este espacio para probar tu implementación
+}

@@ -5,3 +5,7 @@ package main
 func OrdenarBurbuja[T any](arr []T, menor func(T, T) bool) {
 	// TODO: implementar ordenamiento de burbujeo
 }
+
+func main() {
+	// Usá este espacio para probar tu implementación
+}

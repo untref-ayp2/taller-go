@@ -5,7 +5,10 @@ type SaldoInsuficienteError struct {
 	Monto float64
 }
 
-// TODO: implementar el método Error() para que SaldoInsuficienteError implemente error
+// Error implementa la interfaz error.
+func (e SaldoInsuficienteError) Error() string {
+	return "" // TODO: devolver un mensaje descriptivo usando Saldo y Monto
+}
 
 func Extraer(saldo, monto float64) (float64, error) {
 	// TODO: implementar

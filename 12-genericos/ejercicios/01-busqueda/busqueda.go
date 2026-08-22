@@ -13,3 +13,7 @@ func Posicion[T comparable](arr []T, elem T) int {
 	// TODO: implementar
 	return -1
 }
+
+func main() {
+	// Usá este espacio para probar tu implementación
+}
