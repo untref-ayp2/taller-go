@@ -25,3 +25,21 @@ func TestSonAnagramasDistintoLargo(t *testing.T) {
 		t.Errorf("distinto largo no puede ser anagrama")
 	}
 }
+
+func TestNoSonAnagramasMismoLargo(t *testing.T) {
+	if SonAnagramas("abc", "abd") {
+		t.Errorf("abc y abd no son anagramas a pesar de tener la misma longitud")
+	}
+}
+
+func TestVacias(t *testing.T) {
+	if !SonAnagramas("", "") {
+		t.Errorf("dos strings vacios son anagramas")
+	}
+}
+
+func TestUnaVaciaUnaNo(t *testing.T) {
+	if SonAnagramas("abc", "") {
+		t.Errorf("abc y string vacio no pueden ser anagramas")
+	}
+}
