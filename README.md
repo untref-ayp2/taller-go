@@ -79,7 +79,7 @@ Para más información, ver [CONTRIBUTING.md](CONTRIBUTING.md).
 ## Requisitos
 
 - Go 1.22 o superior
-- Opcional: [golangci-lint](https://golangci-lint.run/) para linting local
+- Opcional: [golangci-lint v2](https://golangci-lint.run/) para linting local
 
 ## Licencia
 
